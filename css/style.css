@@ -18,20 +18,14 @@ html, body {
     width: 100%;
     font: 400 10px/1 'Indie Flower', 'Raleway', 'OpenSans';
 }
-.container-nav {
-    position: fixed;
-}
 
 .header-nav {
     position: relative;
     width: auto;
-    z-index: 2;
-   /*background-color: lightcoral;*/
     height: 50px;
     color: #000000;
 }
 
-}
 .header-nav > h4 {
     position: relative;
     float: left;
@@ -56,7 +50,7 @@ html, body {
     text-align: center;
     color: black;
     top: 1rem;
-    right: -21rem;
+    right: 1rem;
     background-position: center center;
     background-repeat: no-repeat;
     background-image: url('../img/mobile-menu.png');
@@ -87,18 +81,20 @@ section {
 }
 
 .container-category {
-
     color: black;
-
 }
 
 .container-category > h3 {
-    font: 400 2.5rem/1.5 'Indie Flower', 'Raleway', 'OpenSans';
+    font: 400 6rem/2 'Indie Flower', 'Raleway', 'OpenSans';
+    color: red;
+
 }
 
 .category-list {
     list-style: none;
-
+    border: 1px solid dimgrey;
+    opacity: 0.5;
+    border-radius: 1rem;
 }
 
 .category-list > li > a {
@@ -108,16 +104,28 @@ section {
 .category-link {
     display: block;
     padding: 1.3rem;
-    border: 1px solid dimgrey;
-    opacity: 0.5;
     text-decoration: none;
-    font: 400 1.8rem/1 'Indie Flower', 'Raleway', 'OpenSans';
+    font: 400 2rem/1 'Indie Flower', 'Raleway', 'OpenSans';
+}
+
+.category-link:nth-child(1) {
+    border-bottom: 1px solid dimgrey;
+}
+
+.category-link:nth-child(2) {
+    border-bottom: 1px solid dimgrey;
+    opacity: 0.5;
 }
 
 .section-container {
 }
 
 .container-slider {
+    width: 100%;
+}
+
+#carousel-example-generic {
+    margin: 1rem;
 }
 
 .item {
@@ -125,40 +133,56 @@ section {
 }
 
 .container-product {
-    background-color: darksalmon;
     border: 1px solid darksalmon;
     border-radius: 0.7rem;
-
+    margin: 2rem 0;
 }
 
 .container-product > img {
-    margin-top: 2rem;
     width: 100%;
     height: auto;
+    border-bottom: 1px solid darksalmon;
 }
 
 .container-product > h4 {
-    width: 45%;
-    margin: 1rem 1.5rem;
+    margin: 0;
+    width: 50%;
+    height: 5rem;
+    padding: 1rem 1.5rem;
     float: left;
-    font: 400 2rem/2 'Indie Flower', 'Raleway', 'OpenSans';
+    font: 400 2rem/1.5 'Indie Flower', 'Raleway', 'OpenSans';
     color: darkred;
 }
 
 .product-price {
-    width: 40%;
-    margin: 1rem 1.5rem;
+    width: 50%;
+    height: 5rem;
+    padding: 1rem 1.5rem;
+    margin: 0;
     float: right;
-    font: 400 2rem/2 'Indie Flower', 'Raleway', 'OpenSans';
+    font: 400 2rem/1.5 'Indie Flower', 'Raleway', 'OpenSans';
     color: black;
     text-align: right;
 }
 
+.container-description {
+    display: block;
+    position: relative;
+    margin: 8rem 1rem 1rem;
+}
+
 .product-description {
-    width: 100%;
+    display: block;
+    position: relative;
     float: none;
-    margin: 1rem 1.5rem;
     font: 400 1.6rem/1.3 'Indie Flower', 'Raleway', 'OpenSans';
+}
+
+.stars {
+    margin: 2rem 1rem 1rem;
+    float: left;
+    font: 400 1.6rem/1.3 'Indie Flower', 'Raleway', 'OpenSans';
+    color: #fe4642;
 }
 
 .product-review {
@@ -168,30 +192,77 @@ section {
     color: #fe4642;
 }
 
+.container-offering {
+    margin: 2rem 0;
+}
+
+.container-offering > h4 {
+    margin: 0;
+    width: 100%;
+    height: 5rem;
+    padding: 1rem;
+    float: left;
+    font: 400 2rem/1.5 'Indie Flower', 'Raleway', 'OpenSans';
+}
+
+.product-link {
+    color: darkred;
+}
+
+.container-offering-description {
+    display: block;
+    position: relative;
+    margin: 4rem 1rem 1rem;
+}
+
+.offering-description {
+    display: block;
+    position: relative;
+    float: none;
+    font: 400 1.6rem/1.3 'Indie Flower', 'Raleway', 'OpenSans';
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
     .nav-list {
         display: block;
+        position: relative;
+        float: left;
+        margin: 2rem;
     }
 
     .nav-list > li {
         display: inline-block;
         list-style: none;
+        font: 400 2rem/1 'Indie Flower', 'Raleway', 'OpenSans';
+        color: #000000;
+    }
+
+    .nav-list > li > a {
+        margin: 1rem;
     }
 
     .mobile-menu {
         display: none;
     }
-
 }
 
 @media (min-width: 992px) {
     .nav-list {
         display: block;
+        position: relative;
+        float: left;
+        margin: 2rem;
     }
 
     .nav-list > li {
         display: inline-block;
         list-style: none;
+        font: 400 2rem/1 'Indie Flower', 'Raleway', 'OpenSans';
+        color: #000000;
+    }
+
+    .nav-list > li > a {
+        margin: 1rem;
     }
 
     .mobile-menu {
@@ -206,6 +277,33 @@ section {
     .section-container {
         float: right;
         width: 75%;
+    }
+
+    .container-slider {
+        width: 100%;
+    }
+
+    .container {
+        display: block;
+        width: 100%;
+    }
+
+    .container-product {
+        display: inline-block;
+        width: 32%;
+        padding: 1rem;
+    }
+
+    .container-offering {
+        display: inline-block;
+        width: 32%;
+        padding: 1rem;
+        vertical-align: top;
+    }
+
+    .container-offering > h4 > a {
+        margin: 0;
+        width: 100%;
     }
 
 }
