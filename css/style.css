@@ -119,12 +119,44 @@ section {
 }
 .container-product {
     background-color: darksalmon;
+    border: 1px solid darksalmon;
+    border-radius: 0.7rem;
+
 }
 .container-product > img {
+    margin-top:2rem;
     width:100%;
     height: auto;
 }
 
+.container-product > h4{
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    margin: 1rem 1.5rem;
+    float: left;
+    font: 400 2rem/2 'Indie Flower', 'Raleway', 'OpenSans';
+    color: darkred;
+}
+
+.product-price{
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    margin:1rem 1.5rem;
+    float: right;
+    font: 400 2rem/2 'Indie Flower', 'Raleway', 'OpenSans';
+    color: black;
+}
+
+.product-description{
+    display: block;
+    position: relative;
+    width:100%;
+    float: none;
+    margin: 1rem 1.5rem;
+    font: 400 1.6rem/1 'Indie Flower', 'Raleway', 'OpenSans';
+}
 
 
 
